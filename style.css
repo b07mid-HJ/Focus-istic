@@ -3,8 +3,7 @@ https://win98icons.alexmeub.com/*/
 @font-face {
     font-family: "font98";
     src: url(font/W95FA.otf);
-    font-family: "VT323";
-    src: url(font/VT323.otf);
+
 }
 #box2 {
     display: flex;
