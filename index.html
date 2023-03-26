@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+           .container1 {
+    position: absolute;
+    height: 250px;
+    width: 800px;
+    ;
+    left: 25%;
+    top: 25%;
+    background-color:transparent;
+}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="my-root.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calender" id="calendar-popup"></div>
+    <div id="startmenu">
+     <ul class="start-menu" style="">
+     <li class="start-submenu">
+        <div class="start-submenu__header">
+          <img src="https://cdn.btc2.tech/v28/images/icons/start-menu/programs.png" class="start-menu__icon">
+          <span class="start-menu__text"><u>P</u>rograms</span>
+        </div> 
+        
+      </li>
+       <li class="start-submenu">
+          <div class="start-submenu__header">
+            <img src="https://cdn.btc2.tech/v28/images/icons/start-menu/documents.png" class="start-menu__icon">
+            <span class="start-menu__text"><u>D</u>ocuments</span>
+          </div> 
+       </li> 
+       <li>
+          <img src="https://cdn.btc2.tech/v28/images/icons/start-menu/settings.png" class="start-menu__icon">
+          <span class="start-menu__text"><u>S</u>ettings</span>
+      </li>
+       <li>
+          <img src="https://cdn.btc2.tech/v28/images/icons/start-menu/help.png" class="start-menu__icon">
+          <span class="start-menu__text"><u>H</u>elp</span>
+        </li> 
+        <li class="disabled">
+          <img src="https://cdn.btc2.tech/v28/images/icons/start-menu/run.png" class="start-menu__icon">
+          <span class="start-menu__text"><u>R</u>un</span>
+        </li> 
+        <hr class="start-menu__divider">
+         <li><img src="https://cdn.btc2.tech/v28/images/icons/start-menu/shutdown.png" class="start-menu__icon">
+          <span class="start-menu__text">Sh<u>u</u>t Down</span></li>
+      </ul>
+    </div>
+    <div class="container1">
+      <img src="b.png">
+    </div>
+    <div class="container">
+      <a id="risorse" href="" class="container-sezioni">
+        <img src="https://cdn.btc2.tech/v28/images/icons/file-types/text.png" alt="" />
+        <p>Form</p>
+      </a>
+      <a id="projects" href="" class="container-sezioni">
+        <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-0.png" alt="" />
+        <p>About US</p>
+      </a>
+      <a id="cmd" href="" class="container-sezioni">
+        <img src="img/console.ico" alt="" />
+        <p>Command Prompt</p>
+      </a>
+      <a id="cestino" href="" class="container-sezioni">
+        <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-0.png" alt="" />
+        <p>Recycle Bin</p>
+      </a>
+      <a id="chrome" href="" class="container-sezioni chrome">
+        <img id="imgChrome" src="img/chrome.png" alt="" />
+        <p id="parChrome">Google Chrome</p>
+      </a>
+      <a id="social" href="" class="container-sezioni">
+        <img src="https://win98icons.alexmeub.com/icons/png/modem-2.png" alt="" />
+        <p>Our Social</p>
+      </a>
+      <a id="Members" href="" class="container-sezioni">
+        <img src="https://cdn.btc2.tech/v28/images/icons/taskbar/recruits.png" alt="" />
+        <p>Members</p>
+      </a>
+    </div>
+
+    <!-- Modali -->
+
+    <!-- Modal #1 -->
+    <div id="modale1" class="modal-content">
+      <div id="risorseModal" class="modal modallow window">
+        <div class="title-bar">
+          <div class="title-bar-text">Form</div>
+          <div class="title-bar-controls">
+            <button id="min1" aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" id="close1"></button>
+          </div>
+        </div>
+        <div class="mainoptions">
+          <div class="options">
+            <div class="colonninaoptions"></div>
+            <a><p>File</p></a>
+            <a><p>Edit</p></a>
+            <a><p>View</p></a>
+            <a><p>Go</p></a>
+            <a><p>Favorites</p></a>
+            <a><p>Help</p></a>
+          </div>
+          <div class="boxnero"><img src="img/black.png" alt="" /></div>
+        </div>
+
+        <div class="window-body">
+          <div class="white-box mycomputer">
+            <form method="POST" action="Untitled-1.html">
+              <font face="VT323">
+                <font size="5">Name    </font>
+                <input type="text" name="T1" size="70">
+              </font>
+              <br>
+              <font face="VT323">
+                <font size="5">Email   </font>
+                <input type="text" name="T2" size="70">
+              </font>
+              <br>
+              <font face="VT323">
+                <font size="5">Adress  </font>
+                <input type="text" name="T3" size="70">
+              </font>
+              <br>
+          <font face="VT323">
+            <font size="5">Phone N°</font>
+            <input type="text" name="T2" size="70">
+            </font>
+            <br><br>
+              <font face="VT323">
+                <font size="5">Choose Departement</font>
+                <select size="1" name="D1">
+                  <option>Select</option>
+                  <option>Event Managment</option>
+                  <option>Developpement Team</option>
+                  <option>Sponsoring</option>
+                  <option>Digital Marketing</option>
+                  <option>Human Ressources</option>
+                </select>
+              </font>
+              <br><br>
+              <center><input type="submit" value="Submit" name="B1" id="btnstart">
+                <input type="reset" value="Reset" name="B1">
+              </center>
+          </form>   
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal #2 -->
+    <div id="modale2" class="modal-content">
+      <div id="projectsModal" class="modal window">
+        <div class="title-bar">
+          <div class="title-bar-text">About Us</div>
+          <div class="title-bar-controls">
+            <button id="min2" aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" id="close2"></button>
+          </div>
+        </div>
+        <div class="mainoptions">
+          <div class="options">
+            <div class="colonninaoptions"></div>
+            <a><p>File</p></a>
+            <a><p>Edit</p></a>
+            <a><p>View</p></a>
+            <a><p>Go</p></a>
+            <a><p>Favorites</p></a>
+            <a><p>Help</p></a>
+          </div>
+          <div class="boxnero"><img src="img/black.png" alt="" /></div>
+        </div>
+
+        <div class="window-body">
+          <div class="white-box projects">
+            <div class="white-box-grid">
+              <div class="white-box-grid__box1">
+                
+               
+                <a href="#" onclick="document.getElementById('box2').innerHTML = '   <b>Greetings from the  FOCUS ISTIC Club </b> in Borj Cedri, Tunisia! Our group was established in 2023 with the intention of advancing computer science instruction and giving students a venue to develop useful skills through workshops and events.Ahmed Hajjem, the clubs founder and our team leader, had the idea to bring together people who shared his enthusiasm for technology. Our group has expanded to include members from all walks of life under his direction.We take great pride in having a hardworking group of people who oversee various facets of our organization.  We actively seek out new people to add to our community, and we welcome participation from anyone with a passion for computer science. Whether you are a seasoned programmer or are just getting started, Focus has a spot for you. Come along with us now and share in our adventure!'; return false;">About Us</a><br>
+                <a href="#" onclick="document.getElementById('box2').innerHTML = ' Yosr Blaeich is in charge of our human resources division and makes sure that our employees have access to the tools they require to be successful. Our media is managed by Amine Jemmali, who makes sure that our meetings and activities are shared with our members and the larger society. Moenes Jaouadi is in charge of handling sponsorships, making sure that we have the funding necessary to effectively manage our events. Our event management staff, which plans workshops, seminars, and hackathons, is led by Mouna Tounakti. Focus is committed to fostering an environment where students can grow academically and socially.'; return false;">Members</a>
+                
+              </div>
+              <div class="white-box-grid__box2" id="box2">
+                <div class="container-sezione riga">
+                  
+                   
+                     <!-- ABOUT US BOX 2 -->
+                    
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal #3 -->
+
+    <div id="modale3" class="modal-content">
+      <div id="cmdModal" class="modal window">
+        <div class="title-bar">
+          <div class="title-bar-text">Command Prompt</div>
+          <div class="title-bar-controls">
+            <button id="min3" aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" id="close3"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="white-box">
+            <div class="black-box-grid">
+              Istic(R) Focus 98 <br />
+              (C) Copyright 2022-2023 Focus Corp. <br />
+
+              <textarea id="cmdtext"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal #4 -->
+    <div id="modale4" class="modal-content">
+      <div id="cestinoModal" class="modal height-cestino window">
+        <div class="title-bar">
+          <div class="title-bar-text">Recycle Bin</div>
+          <div class="title-bar-controls">
+            <button id="min4" aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" id="close4"></button>
+          </div>
+        </div>
+        <div class="mainoptions">
+          <div class="options">
+            <div class="colonninaoptions"></div>
+            <a><p>File</p></a>
+            <a><p>Edit</p></a>
+            <a><p>View</p></a>
+            <a><p>Go</p></a>
+            <a><p>Favorites</p></a>
+            <a><p>Help</p></a>
+          </div>
+          <div class="boxnero"><img src="img/black.png" alt="" /></div>
+        </div>
+        <div class="window-body">
+          <div class="white-box">
+            <div class="white-box-grid">
+              <div class="white-box-grid__box1">
+                <img src="img/cestinovuoto.png" alt="" />
+                <h4>Recycle Bin</h4>
+                <p>
+                  This folder contain files and folders that you have deleted
+                  from your computer.
+                </p>
+                <p>
+                  To permanently remove all items and reclaim disk space click
+                  <a href="">Empty Recycle Bin</a>
+                </p>
+                <p>
+                  To move all items back to their original locations, click
+                  <a href="">Restore All</a>.
+                </p>
+              </div>
+              <div class="white-box-grid__box2">
+                <div class="container-sezione riga">
+                  <a id="explorer" href="" class="explorer ied">
+                    <img src="img/explorer.png" alt="" />
+                    <p>Internet Explorer</p>
+                  </a>
+                  <a href="" class="ied"
+                    ><img src="img/cartellaexplorr.png" alt="" />
+                    <p>
+                      Internet Explorer <br />
+                      Directory
+                    </p>
+                  </a>
+                  <a
+                    href="http://edition.cnn.com/TECH/computing/9903/09/removeie.idg/"
+                    target="_blank"
+                    class="ied"
+                    ><img src="img/collegamento.png" alt="" />
+                    <p>
+                      How delete <br />
+                      Internet Explorer
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modale5" class="modal-content">
+      <div id="chromeModal" class="modal window">
+        <div class="title-bar">
+          <div class="title-bar-text">Error</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" id="close5"></button>
+          </div>
+        </div>
+        <div class="window-body chromewindow">
+          <img src="img/error.png" alt="" />
+          <p id="textChrome"></p>
+        </div>
+        <div class="chromewindow_button">
+          <button id="chrome_button">Ops...</button>
+          <button id="newtab" target="blank_" href="">
+            Open new tab please
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modale6" class="modal-content">
+      <div id="comingModal" class="modal window">
+        <div class="title-bar">
+          <div class="title-bar-text">Error</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" id="close6"></button>
+          </div>
+        </div>
+        <div class="window-body chromewindow">
+          <img src="img/error.png" alt="" />
+          <p>Coming Soon...</p>
+        </div>
+        <div class="chromewindow_button">
+            <button id="comingButton">Ok</button>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal #7 -->
+    <div id="modale7" class="modal-content">
+        <div id="socialModal" class="modal window">
+          <div class="title-bar">
+            <div class="title-bar-text">Our Social</div>
+            <div class="title-bar-controls">
+              <button id="min7" aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close" id="close7"></button>
+            </div>
+          </div>
+          <div class="mainoptions">
+            <div class="options">
+              <div class="colonninaoptions"></div>
+              <a><p>File</p></a>
+              <a><p>Edit</p></a>
+              <a><p>View</p></a>
+              <a><p>Go</p></a>
+              <a><p>Favorites</p></a>
+              <a><p>Help</p></a>
+            </div>
+            <div class="boxnero"><img src="img/black.png" alt="" /></div>
+          </div>
+  
+          <div class="window-body">
+            <div class="white-box projects">
+              <div class="white-box-grid">
+                <div class="white-box-grid__box1">
+                  <img src="https://win98icons.alexmeub.com/icons/png/modem-2.png" alt="" />
+                  <h4 class="social_sub">Our Social</h4><br>
+                  <p>This folder contain our social media platforms feel free to contact us there :)</p>
+                </div>
+                <div class="white-box-grid__box2">
+                  <div class="container-sezione riga">
+                    <a
+                      target="blank_"
+                      class="ied"
+                      href="https://www.linkedin.com/in/focus-club-06329126b/"
+                    >
+                      <img src="img/linkdin.png" alt="" />
+                      <p>Linkdin</p>
+                    </a>
+                    <a
+                      class="ied"
+                      target="blank_"
+                      href="https://www.facebook.com/profile.php?id=100091302813770"
+                    >
+                      <img src="img/facebook.jpg" alt="" />
+                      <p>Facebook</p>
+                    </a>
+                    <a
+                      class="ied"
+                      target="blank_"
+                      href="https://www.instagram.com/focus_istic_club/?igshid=YmMyMTA2M2Y%3D"
+                    >
+                      <img src="img/insta.png" alt="" />
+                      <p>Instagram</p>
+                    </a>
+                    <a
+                      class="ied"
+                      target="blank_"
+                      href="https://github.com/FocusIstic"
+                    >
+                      <img src="img/github.png" alt="" />
+                      <p>Github</p>
+                    </a>
+                    <a
+                    class="ied"
+                    target="blank_"
+                    href="https://www.behance.net/focusistic"
+                  >
+                    <img src="img/behance.png" alt="" />
+                    <p>Behance</p>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modele8-->
+      <div id="modale8" class="modal-content">
+        <div id="MembersModal" class="modal modallow window">
+          <div class="title-bar">
+            <div class="title-bar-text">Members</div>
+            <div class="title-bar-controls">
+              <button id="min8" aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close" id="close8"></button>
+            </div>
+          </div>
+          <div class="mainoptions">
+            <div class="options">
+              <div class="colonninaoptions"></div>
+              <a><p>File</p></a>
+              <a><p>Edit</p></a>
+              <a><p>View</p></a>
+              <a><p>Go</p></a>
+              <a><p>Favorites</p></a>
+              <a><p>Help</p></a>
+            </div>
+            <div class="boxnero"><img src="img/black.png" alt="" /></div>
+          </div>
+  
+          <div class="window-body">
+            <div class="white-box projects">
+            <div class="white-box members" id="membox">
+              <div class="ied" target="blank_">
+                <img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+                <p>  Ahmed Hajjem</p>
+              </div>
+            <div class="ied" target="blank_">
+              <img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+              <p>  Moenes Jaouadi</p>
+            </div>
+          <div class="ied" target="blank_">
+          <img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+          <p>  Amine Jemmali</p>
+        </div>
+        <div class="ied" target="blank_">
+          <img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+          <p>  Louay Hmaidi</p>
+        </div>
+      <div class="ied" target="blank_">
+        <img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+        <p>  Elyes Msehli</p>
+      </div>
+    <div class="ied" target="blank_">
+    <img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+    <p>  Raef Hosni</p>
+  </div>
+  <div class="ied" target="blank_">
+    <img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+    <p>  Youssef Harrane</p>
+  </div>
+<div class="ied" target="blank_">
+  <img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+  <p>  Yosr Blaeich</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Mouna Tounakti</p>
+</div>
+<div class="ied" target="blank_">
+  <img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+  <p>  Ayoub Manai</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Aziz Belhaj Yahya</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Aziz Nouisser</p>
+</div>
+
+
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Hamdi Chtiwi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+<p>  Hedi Nemr</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Iheb Zayati</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Ines Bendhifallah</p>
+</div>
+<div class="ied" target="blank_">
+  <img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+  <p>  Jassem Melki</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Jasser Matmati</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Khalil Kammasi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+<p>  Louai Lamsi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Maleek Rezgui</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Maram Saidi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+<p>  Med Ali Lafi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Youssef Mseddi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Mohammed Omar Ben Ali</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+<p>  Molka Essid</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Oussema Khadraoui</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Saif Daboussi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+<p>  Tarek Msolli</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/moenesu.png" alt="" />
+<p>  Yassine Hacheni</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Younes Saada</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/ahmed.jpg" alt="" />
+<p>  Youssef Gharbi</p>
+</div>
+<div class="ied" target="blank_">
+<img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+<p>  Zouhour Trabelsy</p>
+</div>       
+<div class="ied" target="blank_">
+  <img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+  <p>  Ali AG</p>
+  </div>  
+  <div class="ied" target="blank_">
+    <img width="50px" height="50" src="img/Members/Amine.jpg" alt="" />
+    <p>  Cherif Ouelbeni</p>
+    </div>  
+         
+       
+      
+    
+    
+    
+      
+            </div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    <!-- Footer = Barra applicazioni -->
+    <footer>
+      <button id="btnstart1" class="btnstart1">
+        <img src="b2.png" alt="" />
+      </button>
+      
+      <div class="container-separatore">
+        <div class="separatore"></div>
+        <div class="colonnina"></div>
+        <div class="box-icons">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100091302813770"
+            ><img class="icons" src="img/facebook.jpg" alt=""
+          /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/focus-club-06329126b/"
+            ><img class="icons" src="img/linkdin.png" alt=""
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/focus_istic_club/"
+            ><img class="icons" src="img/insta.png" alt=""
+          /></a>
+        </div>
+        <div class="separatore"></div>
+        <div class="colonnina"></div>
+      </div>
+
+      <div class="btn-modali">
+        <button id="btn_1">
+          <img src="https://cdn.btc2.tech/v28/images/icons/file-types/text.png" alt="" />Form
+        </button>
+        <button id="btn_2">
+          <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-0.png" alt="" />About Us
+        </button>
+        <button id="btn_3">
+          <img src="img/console.ico" alt="" />Command Prompt
+        </button>
+        <button id="btn_4">
+          <img src="img/cestino.ico" alt="" />Recycle Bin
+        </button>
+        <button id="btn5">
+          <img id="imgChrome" src="img/chrome.png" alt="" />
+          <p id="parChrome">Google Chrome</p>
+        </button>
+        <button id="btn6">
+          <img id="imgComing" src="img/error.png" alt="" />Coming Soon
+        </button>
+        <button id="btn7">
+            <img src="https://win98icons.alexmeub.com/icons/png/modem-2.png" alt="" />Our Social
+          </button>
+          <button id="btn8">
+            <img src="https://cdn.btc2.tech/v28/images/icons/taskbar/recruits.png" alt="" />Members
+          </button>
+          
+      </div>
+
+      <div class="container-sezioni-fine">
+        <div class="separatore"></div>
+        <div class="container-orario">
+          <a href="#" id="mute-button"><img class="icons" src="img/audio.ico" alt=""></a>
+          <a href="#" id="calendar-link"><img class="icons" src="img/calendar.ico" alt=""></a>
+          <span id="orario"></span>
+        </div>
+      </div>
+      
+    </footer>
+
+    <script src="./scripts/modalslogic.js"></script>
+    <script src="./scripts/browserdetect.js"></script>
+    <script src="./scripts/time.js"></script>
+    <script src="./scripts/calender.js"></script>
+    <script src="./scripts/Drag.js"></script>
+    <script src="./scripts/Valide.js"></script>
+    <script src="./scripts/MemebersModel.js"></script>
+    <script src="./scripts/Start Menu.js"></script>
+    <script src="./scripts/Mute.js"></script>
+    <script src="./scripts/close.js"></script>
+    
+  </body>
+</html>
